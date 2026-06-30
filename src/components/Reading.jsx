@@ -78,9 +78,6 @@ export default function Reading({ levelIndex }) {
         )}
       </Card>
 
-      <div style={{ marginTop: '0.9rem' }}>
-        <Button onClick={() => onAskAI(text)}>Answer comprehension questions</Button>
-      </div>
     </div>
   )
 }

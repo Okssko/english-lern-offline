@@ -110,9 +110,6 @@ export default function Vocabulary({ levelIndex, onWordLearned }) {
         </Button>
       </div>
 
-      <div style={{ marginTop: '0.9rem' }}>
-        <Button onClick={() => onAskAI(word.word)}>Practice this word with AI</Button>
-      </div>
     </div>
   )
 }

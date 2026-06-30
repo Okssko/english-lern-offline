@@ -111,9 +111,6 @@ export default function Grammar({ levelIndex, onCorrectAnswer }) {
         </Card>
       )}
 
-      <div style={{ marginTop: '0.9rem' }}>
-        <Button onClick={() => onAskAI(topic)}>Ask AI to explain more</Button>
-      </div>
     </div>
   )
 }
