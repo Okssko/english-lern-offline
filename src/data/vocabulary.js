@@ -1,0 +1,51 @@
+// Vocabulary sets per level. Each entry: word, IPA, definition, example sentence.
+export const VOCABULARY = {
+  A1: [
+    { word: 'House', phonetic: '/haʊs/', def: 'A building where a person or family lives.', example: 'We live in a small house near the park.' },
+    { word: 'Friend', phonetic: '/frɛnd/', def: 'A person you know well and like.', example: 'She is my best friend from school.' },
+    { word: 'Happy', phonetic: '/ˈhæpi/', def: 'Feeling or showing pleasure.', example: 'He felt happy when he saw his family.' },
+    { word: 'Water', phonetic: '/ˈwɔːtər/', def: 'A clear liquid that we drink.', example: 'Can I have a glass of water, please?' },
+    { word: 'Today', phonetic: '/təˈdeɪ/', def: 'On or during this present day.', example: 'I have an English lesson today.' },
+    { word: 'Work', phonetic: '/wɜːrk/', def: 'An activity involving effort, often to earn money.', example: 'My mother goes to work every morning.' },
+  ],
+  A2: [
+    { word: 'Weather', phonetic: '/ˈwɛðər/', def: 'The condition of the sky and air, hot or cold, sunny or rainy.', example: 'The weather is lovely today.' },
+    { word: 'Decide', phonetic: '/dɪˈsaɪd/', def: 'To choose something after thinking about it.', example: 'We need to decide where to go on holiday.' },
+    { word: 'Enjoy', phonetic: '/ɪnˈdʒɔɪ/', def: 'To get pleasure from something.', example: 'I really enjoy reading in the evening.' },
+    { word: 'Improve', phonetic: '/ɪmˈpruːv/', def: 'To get better at something.', example: 'My English has improved a lot this year.' },
+    { word: 'Probably', phonetic: '/ˈprɒbəbli/', def: 'Likely to happen or be true.', example: 'It will probably rain this afternoon.' },
+    { word: 'Comfortable', phonetic: '/ˈkʌmftəbəl/', def: 'Giving a pleasant feeling of ease.', example: 'This chair is very comfortable.' },
+  ],
+  B1: [
+    { word: 'Ambitious', phonetic: '/æmˈbɪʃəs/', def: 'Having a strong wish to be successful, powerful, or rich.', example: 'She is very ambitious and wants to start her own company.' },
+    { word: 'Consistent', phonetic: '/kənˈsɪstənt/', def: 'Always behaving or happening in a similar way.', example: 'To improve, you need to be consistent with your practice.' },
+    { word: 'Opportunity', phonetic: '/ˌɒpəˈtjuːnəti/', def: 'A time or situation that makes it possible to do something.', example: 'Learning English gives you many opportunities in life.' },
+    { word: 'Confident', phonetic: '/ˈkɒnfɪdənt/', def: 'Feeling sure about your own ability to do things.', example: 'After practicing, she felt more confident speaking English.' },
+    { word: 'Determine', phonetic: '/dɪˈtɜːrmɪn/', def: 'To control or decide what something will be.', example: 'Your effort will determine how fast you improve.' },
+    { word: 'Achieve', phonetic: '/əˈtʃiːv/', def: 'To succeed in finishing something or reaching a goal.', example: 'She worked hard to achieve fluency in English.' },
+  ],
+  B2: [
+    { word: 'Reluctant', phonetic: '/rɪˈlʌktənt/', def: 'Unwilling and hesitant to do something.', example: 'He was reluctant to speak in front of the class at first.' },
+    { word: 'Versatile', phonetic: '/ˈvɜːrsətaɪl/', def: 'Able to adapt to many different functions or situations.', example: 'English is a versatile skill that helps in many careers.' },
+    { word: 'Overwhelm', phonetic: '/ˌoʊvərˈwɛlm/', def: 'To affect someone with a strong emotion or a large amount of something.', example: 'New grammar rules can overwhelm beginners at first.' },
+    { word: 'Articulate', phonetic: '/ɑːrˈtɪkjəleɪt/', def: 'Able to express thoughts and ideas clearly.', example: 'She became more articulate after months of speaking practice.' },
+    { word: 'Resilience', phonetic: '/rɪˈzɪliəns/', def: 'The ability to recover quickly from difficulties.', example: 'Learning a language requires patience and resilience.' },
+    { word: 'Nuance', phonetic: '/ˈnjuːɑːns/', def: 'A subtle difference in meaning or expression.', example: 'Understanding nuance is key to sounding natural in English.' },
+  ],
+  C1: [
+    { word: 'Eloquent', phonetic: '/ˈɛləkwənt/', def: 'Fluent and persuasive in speaking or writing.', example: 'Her eloquent speech impressed the entire audience.' },
+    { word: 'Ambiguous', phonetic: '/æmˈbɪɡjuəs/', def: 'Open to more than one interpretation; unclear.', example: 'The instructions were ambiguous, so we asked for clarification.' },
+    { word: 'Pragmatic', phonetic: '/præɡˈmætɪk/', def: 'Dealing with things sensibly and practically.', example: 'He took a pragmatic approach to learning vocabulary.' },
+    { word: 'Discrepancy', phonetic: '/dɪˈskrɛpənsi/', def: 'A difference between two things that should be the same.', example: 'There was a discrepancy between what she said and what she wrote.' },
+    { word: 'Vindicate', phonetic: '/ˈvɪndɪkeɪt/', def: 'To show that someone or something was right.', example: 'Her years of study were vindicated when she passed the exam.' },
+    { word: 'Tenacious', phonetic: '/təˈneɪʃəs/', def: 'Persistent and determined.', example: 'Being tenacious is essential when learning a new language.' },
+  ],
+  C2: [
+    { word: 'Ephemeral', phonetic: '/ɪˈfɛmərəl/', def: 'Lasting for a very short time.', example: 'The feeling of confidence after a good lesson can be ephemeral if you stop practicing.' },
+    { word: 'Ubiquitous', phonetic: '/juːˈbɪkwɪtəs/', def: 'Present, appearing, or found everywhere.', example: 'English has become almost ubiquitous in international business.' },
+    { word: 'Esoteric', phonetic: '/ˌɛsəˈtɛrɪk/', def: 'Intended for or understood by only a small group.', example: 'Some grammar rules feel esoteric until you see them used naturally.' },
+    { word: 'Cogent', phonetic: '/ˈkoʊdʒənt/', def: 'Clear, logical, and convincing.', example: 'She made a cogent argument for daily practice over cramming.' },
+    { word: 'Idiosyncrasy', phonetic: '/ˌɪdiəˈsɪŋkrəsi/', def: 'A particular and unusual feature or habit.', example: 'Every language has idiosyncrasies that take time to learn.' },
+    { word: 'Perspicacious', phonetic: '/ˌpɜːrspɪˈkeɪʃəs/', def: 'Having a ready insight into and understanding of things.', example: 'Her perspicacious feedback helped him correct subtle mistakes.' },
+  ],
+}
