@@ -10,7 +10,7 @@ import Listening from './components/Listening.jsx'
 import Chat from './components/Chat.jsx'
 
 export default function App() {
-  const { state, addPoints, incrementWordsLearned, setLevelFromTest, resetAllProgress } = useProgress()
+  const { state, addPoints, incrementWordsLearned, setLevelFromTest, resetAllProgress, resetTest } = useProgress()
   const [tab, setTab] = useState('home')
   const [justLeveledUp, setJustLeveledUp] = useState(false)
 
@@ -50,6 +50,7 @@ export default function App() {
             onNavigate={setTab}
             justLeveledUp={justLeveledUp}
             onResetProgress={resetAllProgress}
+            onRetakeTest={resetTest}
           />
         )}
         {tab === 'vocab' && (

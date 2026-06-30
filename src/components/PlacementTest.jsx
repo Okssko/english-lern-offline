@@ -43,6 +43,9 @@ export default function PlacementTest({ onComplete }) {
 
   if (finished) {
     const level = LEVELS[resultIndex]
+    const levelMeta = LEVEL_INFO[level]
+    const maxPossibleScore = PLACEMENT_QUESTIONS.reduce((sum, question) => sum + question.weight, 0)
+
     return (
       <div style={{ maxWidth: 480, margin: '0 auto', padding: '1.5rem 1rem' }}>
         <Card style={{ textAlign: 'center', padding: '2.5rem 1.5rem' }}>
@@ -53,8 +56,21 @@ export default function PlacementTest({ onComplete }) {
             Your recommended level
           </p>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '0.6rem' }}>{level}</h1>
-          <p style={{ fontSize: '0.95rem', color: 'var(--ink-soft)', lineHeight: 1.6 }}>
-            {LEVEL_INFO[level].name} &mdash; {LEVEL_INFO[level].desc}
+          <p style={{ fontSize: '0.9rem', color: 'var(--ink-faint)', marginBottom: '0.7rem' }}>
+            Score: {score} / {maxPossibleScore}
+          </p>
+          <div style={{ marginBottom: '0.9rem', lineHeight: 1.6 }}>
+            <p style={{ fontSize: '0.95rem', color: 'var(--ink-soft)', marginBottom: '0.45rem' }}>
+              <strong>English:</strong> {levelMeta.name} &mdash; {levelMeta.desc}
+            </p>
+            <p style={{ fontSize: '0.95rem', color: 'var(--ink-soft)' }}>
+              <strong>Русский:</strong> {levelMeta.ruName} &mdash; {levelMeta.ruDesc}
+            </p>
+          </div>
+          <p style={{ fontSize: '0.8rem', color: 'var(--ink-faint)', lineHeight: 1.5 }}>
+            This is a quick self-assessment based on your answers.
+            <br />
+            Это быстрый самооценочный результат по вашим ответам.
           </p>
         </Card>
         <div style={{ marginTop: '1rem', display: 'grid', gap: '0.6rem' }}>

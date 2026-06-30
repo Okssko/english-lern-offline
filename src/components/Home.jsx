@@ -2,7 +2,7 @@ import { LEVELS, LEVEL_INFO, POINTS_PER_LEVEL } from '../data/levels.js'
 import { Card, ProgressBar, SectionLabel } from './ui.jsx'
 import BloomMark from './BloomMark.jsx'
 
-export default function Home({ progress, onNavigate, justLeveledUp, onResetProgress }) {
+export default function Home({ progress, onNavigate, justLeveledUp, onResetProgress, onRetakeTest }) {
   const { levelIndex, points, wordsLearned, streak, dailyDone, dailyGoal } = progress
   const level = LEVELS[levelIndex]
   const pointsIntoLevel = points % POINTS_PER_LEVEL
@@ -117,8 +117,8 @@ export default function Home({ progress, onNavigate, justLeveledUp, onResetProgr
 
       <button
         onClick={() => {
-          if (window.confirm('This will erase your level, points, and streak. Continue?')) {
-            onResetProgress()
+          if (window.confirm('This will restart the placement test and update your suggested level. Continue?')) {
+            onRetakeTest ? onRetakeTest() : onResetProgress()
           }
         }}
         style={{
@@ -131,7 +131,7 @@ export default function Home({ progress, onNavigate, justLeveledUp, onResetProgr
           padding: '0.5rem',
         }}
       >
-        Reset progress and retake placement test
+        Retake placement test
       </button>
     </div>
   )

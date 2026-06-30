@@ -1,12 +1,12 @@
 export const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
 export const LEVEL_INFO = {
-  A1: { name: 'Beginner', desc: 'You know everyday words and the simplest phrases.' },
-  A2: { name: 'Elementary', desc: 'You can handle short, simple exchanges on familiar topics.' },
-  B1: { name: 'Intermediate', desc: 'You understand the main points of clear standard speech and can connect ideas in conversation.' },
-  B2: { name: 'Upper-intermediate', desc: 'You can discuss most topics with good fluency and understand complex text.' },
-  C1: { name: 'Advanced', desc: 'You express yourself fluently and spontaneously on a wide range of subjects.' },
-  C2: { name: 'Proficient', desc: 'You understand virtually everything you read or hear with ease.' },
+  A1: { name: 'Beginner', ruName: 'Начальный уровень', desc: 'You know everyday words and the simplest phrases.', ruDesc: 'Вы знаете повседневные слова и самые простые фразы.' },
+  A2: { name: 'Elementary', ruName: 'Элементарный уровень', desc: 'You can handle short, simple exchanges on familiar topics.', ruDesc: 'Вы можете поддерживать короткие простые разговоры на знакомые темы.' },
+  B1: { name: 'Intermediate', ruName: 'Средний уровень', desc: 'You understand the main points of clear standard speech and can connect ideas in conversation.', ruDesc: 'Вы понимаете основные идеи понятной стандартной речи и можете связно выражать мысли в разговоре.' },
+  B2: { name: 'Upper-intermediate', ruName: 'Выше среднего', desc: 'You can discuss most topics with good fluency and understand complex text.', ruDesc: 'Вы можете обсуждать большинство тем с хорошей беглостью и понимать сложные тексты.' },
+  C1: { name: 'Advanced', ruName: 'Продвинутый уровень', desc: 'You express yourself fluently and spontaneously on a wide range of subjects.', ruDesc: 'Вы выражаете мысли свободно и спонтанно на широкий круг тем.' },
+  C2: { name: 'Proficient', ruName: 'Профессиональный уровень', desc: 'You understand virtually everything you read or hear with ease.', ruDesc: 'Вы практически всё понимаете в чтении и аудировании с лёгкостью.' },
 }
 
 export const POINTS_PER_LEVEL = 500
