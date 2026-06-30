@@ -53,7 +53,18 @@ export default function Vocabulary({ levelIndex, onWordLearned }) {
           <>
             <h2 style={{ fontSize: '2rem', marginBottom: '0.4rem', wordBreak: 'break-word' }}>{word.word}</h2>
             {word.translation && (
-              <p style={{ fontSize: '1rem', color: 'var(--ink-soft)', fontWeight: 600, marginBottom: '0.4rem' }}>
+              <p
+                style={{
+                  fontSize: '1.05rem',
+                  color: 'var(--ink-soft)',
+                  fontWeight: 700,
+                  marginBottom: '0.45rem',
+                  padding: '0.2rem 0.55rem',
+                  borderRadius: '999px',
+                  background: 'rgba(133, 79, 11, 0.08)',
+                  display: 'inline-block',
+                }}
+              >
                 {word.translation}
               </p>
             )}
@@ -65,7 +76,18 @@ export default function Vocabulary({ levelIndex, onWordLearned }) {
         ) : (
           <>
             {word.translation && (
-              <p style={{ fontSize: '0.95rem', color: 'var(--ink-soft)', fontWeight: 600, marginBottom: '0.45rem' }}>
+              <p
+                style={{
+                  fontSize: '1rem',
+                  color: 'var(--ink-soft)',
+                  fontWeight: 700,
+                  marginBottom: '0.5rem',
+                  padding: '0.2rem 0.6rem',
+                  borderRadius: '999px',
+                  background: 'rgba(133, 79, 11, 0.08)',
+                  display: 'inline-block',
+                }}
+              >
                 {word.translation}
               </p>
             )}
