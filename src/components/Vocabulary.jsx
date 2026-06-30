@@ -52,6 +52,11 @@ export default function Vocabulary({ levelIndex, onWordLearned }) {
         {!flipped ? (
           <>
             <h2 style={{ fontSize: '2rem', marginBottom: '0.4rem', wordBreak: 'break-word' }}>{word.word}</h2>
+            {word.translation && (
+              <p style={{ fontSize: '1rem', color: 'var(--ink-soft)', fontWeight: 600, marginBottom: '0.4rem' }}>
+                {word.translation}
+              </p>
+            )}
             <p style={{ fontSize: '0.9rem', color: 'var(--ink-faint)', fontFamily: 'monospace', marginBottom: '1rem' }}>
               {word.phonetic}
             </p>
@@ -59,6 +64,11 @@ export default function Vocabulary({ levelIndex, onWordLearned }) {
           </>
         ) : (
           <>
+            {word.translation && (
+              <p style={{ fontSize: '0.95rem', color: 'var(--ink-soft)', fontWeight: 600, marginBottom: '0.45rem' }}>
+                {word.translation}
+              </p>
+            )}
             <p style={{ fontSize: '1.05rem', color: 'var(--ink-soft)', lineHeight: 1.6, marginBottom: '0.6rem' }}>
               {word.def}
             </p>
